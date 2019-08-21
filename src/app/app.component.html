@@ -1,5 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <div class="navigation">
+    <button mat-raised-button color="primary" routerLink="/">Feed</button>
+    <button mat-raised-button color="primary" routerLink="/capture">Capture</button>
+  </div>
+  <div class="main-div">
+    <router-outlet></router-outlet>
+  </div>
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,4 +25,4 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+

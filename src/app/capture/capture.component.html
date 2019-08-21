@@ -1,0 +1,17 @@
+<mat-card class="z-depth center" flex="50">
+  <mat-card-header>
+    <mat-card-title>Smile - and take a selfie <span>{{ \uD83D\u0xDE0F }}</span>📱</mat-card-title>
+  </mat-card-header>
+  <video #video id="video" mat-card-image autoplay *ngIf="displayStream"></video>
+  <canvas #canvas id="canvas" mat-card-image [width]="width" [height]="height" [hidden]="displayStream"></canvas>
+  <mat-card-content>
+    <p>
+      Snap away!
+    </p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="actions">
+    <button mat-raised-button color="primary" (click)="capture()" *ngIf="displayStream">Capture Photo</button>
+    <button mat-raised-button color="warn" (click)="retakePhoto()" *ngIf="!displayStream">Retake Photo</button>
+    <button mat-raised-button color="accent" (click)="usePhoto()" *ngIf="online && !displayStream">Use photo</button>
+  </mat-card-actions>
+</mat-card>

@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+https://blog.fullstacktraining.com/creating-a-realtime-pwa-using-angular-and-firebase-part-1/
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCOHbFDmmaYYbMjxFstuDu1sth1VgRu9DM",
+    authDomain: "ng-pwa-d812e.firebaseapp.com",
+    databaseURL: "https://ng-pwa-d812e.firebaseio.com",
+    projectId: "ng-pwa-d812e",
+    storageBucket: "",
+    messagingSenderId: "1065365724703",
+    appId: "1:1065365724703:web:dcf69b83c6f99aa8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
