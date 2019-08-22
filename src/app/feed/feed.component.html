@@ -1,1 +1,11 @@
-<p>feed works!</p>
+<h1>Selfie feed <span>📱</span></h1>
+<mat-card class="spaced z-depth center" flex="50" *ngFor="let capture of captures$ | async">
+  <cl-image public-id="{{ capture.public_id }}" mat-card-image>
+    <cl-transformation width="450" height="450" gravity="faces" radius="max" crop="thumb" border="4px_solid_rgb:000" effect="improve"></cl-transformation>
+    <cl-transformation effect="sepia:90"></cl-transformation>
+  </cl-image>
+  <mat-card-content>
+    <p>Uploaded at {{ capture.uploaded | date: 'full' }}</p>
+  </mat-card-content>
+  <mat-card-footer></mat-card-footer>
+</mat-card>

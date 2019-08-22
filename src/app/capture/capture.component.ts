@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./capture.component.css']
 })
 export class CaptureComponent implements OnInit, OnDestroy {
-  @ViewChild('video',{ read: true, static: false })
+  @ViewChild('video')
   video: ElementRef;
-  @ViewChild('canvas',{ read: true, static: false })
+  @ViewChild('canvas')
   canvas: ElementRef;
 
   private constraints = {
