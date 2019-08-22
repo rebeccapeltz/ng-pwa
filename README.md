@@ -37,3 +37,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 [See this link for tutorial](https://blog.fullstacktraining.com/creating-a-realtime-pwa-using-angular-and-firebase-part-1/)
 
 ## Code only works for version 7 of angular
+
+## deployment: https://github.com/angular/angular-cli/wiki/stories-github-pages
