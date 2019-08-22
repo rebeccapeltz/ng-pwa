@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "selfiemator": {
+    "ng-pwa": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/selfiemator",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "selfiemator:build"
+            "browserTarget": "ng-pwa:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "selfiemator:build:production"
+              "browserTarget": "ng-pwa:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "selfiemator:build"
+            "browserTarget": "ng-pwa:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "selfiemator-e2e": {
+    "ng-pwa-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "selfiemator:serve"
+            "devServerTarget": "ng-pwa:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "selfiemator:serve:production"
+              "devServerTarget": "ng-pwa:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "selfiemator"
+  "defaultProject": "ng-pwa"
 }
